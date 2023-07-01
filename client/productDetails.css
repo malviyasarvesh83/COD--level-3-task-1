@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: #f0f0f0;
+} */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+}
+
+.container1 {
+    background-color: #2874f0;
+    height: 60px;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    cursor: pointer;
+    line-height: 0;
+    margin-left: 150px;
+    padding-top: 15px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo p {
+    font-style: italic;
+    color: white;
+    font-size: 12px;
+}
+
+.logo p img {
+    width: 10px;
+}
+
+.logo p span {
+    color: yellow;
+}
+
+.logo p:hover {
+    text-decoration: underline;
+}
+
+.search {
+    margin-left: 20px;
+    border: 1px solid white;
+    width: 450px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.search input {
+    width: 400px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search i {
+    font-size: 20px;
+    color: #2874f0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.login {
+    margin-left: 30px;
+    border: 1px solid white;
+    width: 150px;
+    height: 30px;
+    background-color: #fff;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.login span {
+    color: #2874f0;
+    padding-left: 25px;
+    font-size: 15px;
+}
+
+.seller {
+    margin-left: 40px;
+    margin-top: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.more {
+    margin-left: 40px;
+    margin-top: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cart {
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.product-container {
+    display: flex;
+}
+
+.product-container .left-container {
+    /* border: 1px solid gray; */
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 500px;
+    height: 550px;
+}
+
+.product-container .left-container .img {
+    border: 1px solid gray;
+    width: 500px;
+    height: 500px;
+}
+
+.product-container .left-container .img img {
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.product-container .left-container .productBtn {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50px;
+}
+
+.product-container .left-container .productBtn button {
+    margin-top: 10px;
+    width: 245px;
+    height: 100%;
+}
+
+.cart-btn {
+    background-color: orange;
+    color: #fff;
+}
+
+.buy {
+    background-color: orangered;
+    color: #fff;
+}
+
+.product-container .right-container {
+    /* border: 1px solid gray; */
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.product-container .right-container .longTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.product-container .right-container .rating {
+    display: flex;
+}
+
+.product-container .right-container .rating .star {
+    /* border: 1px solid gray; */
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    padding-left: 8px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.product-container .right-container .rating .review {
+    color: #f0f0f0;
+    font-weight: 500;
+    /* border: 1px solid gray; */
+    width: 220px;
+    margin-left: 20px;
+}
+
+.product-container .right-container .rating img {
+    width: 70px;
+    height: 21px;
+    /* margin-left: 20px; */
+}
+
+.special {
+    margin-top: 20px;
+    color: green;
+}
+
+.cost {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.discount {
+    color: green;
+    margin-left: 10px;
+}
+
+h6 {
+    margin-top: 20px;
+}
+
+.offer i {
+    color: green;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.offer {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.owner {
+    display: flex;
+}
+
+.owner-desc {
+    margin-left: 80px;
+}

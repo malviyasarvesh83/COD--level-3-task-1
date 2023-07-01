@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - FlipKart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="productDetails.css" />
+    <link
+      rel="shortcut icon"
+      href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico"
+      type="image/x-icon"
+    />
+</head>
+<body>
+    <div class="container1">
+      <div class="logo" onclick="homepage()">
+        <img
+          src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+          alt="flipkartLogo"
+        />
+        <p>
+          Explore <span>Plus</span>
+          <img
+            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+            alt="plusLogo"
+          />
+        </p>
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search for products, brands and more"
+        />
+        <i class="fas fa-magnifying-glass"></i>
+      </div>
+      <div class="login">
+        <span class="userName"></span>
+      </div>
+      <div class="seller">
+        <span>Become a Seller</span>
+      </div>
+      <div class="more">
+        <span>More</span>
+      </div>
+      <div class="cart" onclick="cart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Cart</span>
+      </div>
+    </div>
+    <div class="product-container">
+        <div class="left-container">
+
+        </div>
+        <div class="right-container">
+            <div class="title"></div>
+            <div class="rating">
+                <div class="star">
+                    <p>4.4 <i class="fas fa-star"></i></p>
+                </div>
+                <span class="review">1,989 Ratings & 256 Reviews</span>
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="fAssured">
+            </div>
+            <p class="special">Special Price</p>
+            <div class="price"></div>
+            <h6>Available offers</h6>
+            <div>
+                <p class="offer"><i class="fas fa-tag"></i>Bank Offer Flat ₹1,250 Off on HDFC Bank Credit Card EMI Trxns on orders priced between ₹15,000 to ₹39,999 <a href="#">T&C</a></p>
+                <p class="offer"><i class="fas fa-tag"></i>Bank Offer Flat ₹3,000 Off on HDFC Bank Credit Card EMI Trxns on orders priced between ₹40,000 to ₹49,999 <a href="#">T&C</a></p>
+                <p class="offer"><i class="fas fa-tag"></i>Bank Offer Flat ₹4,000 Off on HDFC Bank Credit Card EMI Transactions on orders of ₹50,000 and above <a href="#">T&C</a></p>
+                <p class="offer"><i class="fas fa-tag"></i>Extra ₹2,000 Off on Bikes & Scooters on purchase of ₹30,000 or more <a href="#">T&C</a></p>
+            </div>
+            <div class="owner">
+                <div class="owner-head">
+                    <span>Seller</span>
+                </div>
+                <div class="owner-desc">
+                    <a href="#">OmniTechRetail</a>
+                    <ul>
+                        <li>7 Days Service Center Replacement/Repair</li>
+                        <li>GST invoice available</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="super">
+                <img src="https://rukminim1.flixcart.com/lockin/400/400/images/CCO__PP_2019-07-14.png?q=50" alt="superCoin">
+            </div>
+            <div class="product-desc"></div>
+        </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="productDetails.js"></script>
+</body>
+</html>

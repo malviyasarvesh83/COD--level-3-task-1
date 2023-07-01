@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+}
+
+.container1 {
+    background-color: #2874f0;
+    height: 60px;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    cursor: pointer;
+    line-height: 0;
+    margin-left: 150px;
+    padding-top: 15px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo p {
+    font-style: italic;
+    color: white;
+    font-size: 12px;
+}
+
+.logo p img {
+    width: 10px;
+}
+
+.logo p span {
+    color: yellow;
+}
+
+.logo p:hover {
+    text-decoration: underline;
+}
+
+.search {
+    margin-left: 20px;
+    border: 1px solid white;
+    width: 450px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.search input {
+    width: 400px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search i {
+    font-size: 20px;
+    color: #2874f0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.login {
+    margin-left: 30px;
+    border: 1px solid white;
+    width: 150px;
+    height: 30px;
+    background-color: #fff;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.login span {
+    color: #2874f0;
+    padding-left: 25px;
+    font-size: 15px;
+}
+
+.seller {
+    margin-left: 40px;
+    margin-top: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.more {
+    margin-left: 40px;
+    margin-top: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cart {
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.welcome,
+.empty,
+.cart-container {
+    display: none;
+}
+
+.empty {
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.empty img {
+    width: 600px;
+}
+
+.empty p {
+    margin-left: 150px;
+    font-size: 30px;
+}
+
+.empty a {
+    text-decoration: none;
+    margin-left: 200px;
+    font-size: 30px;
+}
+
+.cart-container1 {
+    display: flex;
+}
+
+.cart-container .cart-item {
+    border: 1px solid gray;
+    width: 800px;
+    margin-left: 50px;
+    /* margin-top: 20px; */
+    height: 470px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.cart-container .place-order {
+    border: 1px solid white;
+    width: 800px;
+    margin-left: 50px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.cart-container .place-order .btn-primary {
+    margin-left: 480px;
+    background-color: orangered;
+    border-color: orangered;
+    margin-top: 8px;
+    font-size: 20px;
+    width: 300px;
+}
+
+.cart-item-list {
+    display: flex;
+}
+
+.address {
+    border: 1px solid white;
+    margin-left: 50px;
+    width: 800px;
+    margin-top: 20px;
+    background-color: #fff;
+    display: flex;
+}
+
+.address .btn-primary {
+    margin-left: 560px;
+    background-color: orange;
+    border-color: orange;
+}
+
+.right-container {
+    border: 1px solid gray;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 500px;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.right-container p {
+    color: gray;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.right-container .price,
+.right-container .disc,
+.right-container .delivery,
+.right-container .total {
+    display: flex;
+    /* border: 1px solid gray; */
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 15px;
+    /* font-weight: 600; */
+}
+
+.right-container .price p {
+    margin-left: 200px;
+}
+.right-container .disc p {
+    margin-left: 230px;
+    color: green;
+}
+.right-container .delivery p {
+    margin-left: 200px;
+    color: green;
+}
+.right-container .total p {
+    margin-left: 200px;
+}
+
+.right-container .save {
+    color: green;
+}
+
+.add {
+    font-size: 15px;
+}
+
+.img-qty img {
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.qty {
+    margin-top: 10px;
+}
+
+.qty button {
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.qty input {
+    width: 40px;
+    padding-left: 10px;
+}
+
+.cart-item-list .desc {
+    margin-left: 50px;
+}
+
+.cart-item-list .price {
+    display: flex;
+}
+
+.cart-item-list .price p {
+    font-size: 20px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.cart-item-list .price span {
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.cart-item-list .price h3 {
+    color: green;
+    font-size: 20px;
+}
+
+.desc .price .date {
+    font-size: 15px;
+    margin-left: 300px;
+}
